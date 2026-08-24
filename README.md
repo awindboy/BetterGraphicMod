@@ -172,13 +172,6 @@ mechanical cutters with stepped five-groove spiral faces and distinct cutter pad
 - Removed the four detached grey clamp blocks from each conventional drill's
   fixed top layer. The top layer now contains only the small central collar,
   leaving the mechanism visible.
-- Added stronger, restrained bevel highlights and shadow planes to the shared
-  metal frames used by Mechanical, Pneumatic, and Laser drills.
-- Enlarged and thickened the Laser Drill's four rotating emitters and beams,
-  then checked its 0, 45, and 90-degree rotations for atlas clipping.
-- Recolored the Blast Drill's static refractory plates to red-hot furnace metal
-  and removed its obstructive grey upper armor, while keeping its separate
-  additive heat rim.
 
 ### 0.8.3
 
