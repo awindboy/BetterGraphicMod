@@ -1,4 +1,4 @@
-# v0.6.0 Sprite Batch Manifest
+# v0.7.0 Sprite Batch Manifest
 
 - Target: Mindustry v8 Build 159.7
 - Texture scale: `0.125` (256 source pixels per tile)
@@ -18,6 +18,13 @@ Class/profile: `Drill` / P08
 | `blast-drill-rim.png` | heat rim | additive warmup pulse |
 
 Per-block item masks are used. Shared `drill-item-2/3/4` regions remain untouched.
+
+### v0.7.0 Serpulo drill identities
+
+- `mechanical-drill`: intermeshed brass gear train and a circular spiral cutter
+- `pneumatic-drill`: valved air reservoirs, readable hoses, and a grooved pressure bit
+- `laser-drill`: four pointer emitters and four thick beams in the rotating region
+- `blast-drill`: furnace base, additive heat rim, layered static armor, and a red blast-wall rotor
 
 ## Beam drills
 
