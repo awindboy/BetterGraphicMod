@@ -8,8 +8,8 @@
 
 ## 현재 적용
 
-- `Mechanical Drill`: 본체와 회전 드릴 헤드를 분리
-- `Duo`: 본체, 좌우 회전 포신을 분리
+- `Mechanical Drill`: 각진 본체, 회전 드릴 헤드, 중앙 광물 색상 마스크를 분리
+- `Duo`: 받침은 단순화하고 좌우 포신을 크게 분리
 
 바닐라 엔진이 드릴 회전, 포탑 조준·반동, 채굴·발사 이펙트를 계속 처리하도록
 기존 스프라이트 레이어 이름을 유지했습니다.
@@ -18,6 +18,13 @@
 
 이 폴더를 압축하거나 폴더 그대로 Mindustry의 Mods 메뉴에서 가져옵니다.
 게임이 설치된 뒤에는 `functional-resprites` 모드를 활성화하고 재시작합니다.
+
+## 0.4.0 변경 사항
+
+- 고해상도지만 매끈하고 제한된 색면을 사용하는 스타일로 재작업했습니다.
+- 드릴 회전부는 기존 360도 회전 레이어를 유지합니다.
+- 중앙 광물 표시는 실제 광물 이미지를 덮지 않고 작은 육각형 색상 마스크만 사용합니다.
+- Duo 좌우 포신은 별도 레이어로 유지해 번갈아 발사하는 기본 반동을 보존합니다.
 
 ## 다음 확인 항목
 
@@ -41,18 +48,18 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.3.1
+Functional Resprites 0.4.0
 
 This version keeps the block-scale art readable at normal zoom.
 
-- The mechanical drill keeps its functional drill body, rotator, and animation.
-- The drill keeps its safe vanilla material indicator for now. The dynamic
-  per-item center renderer is intentionally deferred until it can be tested
-  against the exact game runtime.
+- The mechanical drill is split into a static base, a rotating central bit, and
+  a top layer so the existing 360-degree animation remains intact.
+- Its center uses a small hexagonal mask tinted by the dominant mined material;
+  no oversized mineral image covers the drill.
 - The same `item-*.png` files override the vanilla item regions, so conveyor
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
-- Duo remains a turret: its visual priority is the twin barrels, rotation, and
-  firing direction. Mineral sprites are intentionally not used on the turret.
+- Duo keeps a compact base and prominent left/right barrel layers. The vanilla
+  alternate-fire and per-barrel recoil behavior are intentionally preserved.
 
 The package is a texture-only override for vanilla blocks; no block behavior,
 recipes, save data, or campaign data are changed.
