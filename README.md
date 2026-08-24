@@ -147,18 +147,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.8.5
-
-### 0.8.5 — load-safe complete structure chassis pass
-
-- Added 256 Build 159.7 override regions covering every player-buildable
-  structure's primary chassis plus shared turret foundations.
-- Drill and Duo's hand-authored multi-layer render stacks remain unchanged.
-- Animated secondary regions such as conveyor frames, liquid fills, heat masks,
-  recoil parts and beam effects intentionally remain vanilla outside those
-  hand-authored sets. This preserves original motion while keeping atlas memory
-  within a load-safe budget.
-- Environment floors, ores, props and map decoration are not overridden.
+Functional Resprites 0.8.4
 
 This version retains the four Serpulo drill mechanisms and refines the two
 mechanical cutters with stepped five-groove spiral faces and distinct cutter pads.
