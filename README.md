@@ -31,6 +31,13 @@
 현재 버전은 레이어 구조와 피벗을 검증하는 단계입니다. 상부 덮개와 연기·열·총구
 섬광 레이어는 게임에서 기본 레이어 정렬을 확인한 뒤 추가합니다.
 
+## 0.4.2 변경 사항
+
+- Duo의 렌더 레이어를 실제 엔진 구조에 맞게 `duo-base.png`, `duo.png`,
+  `duo-barrel-l/r.png`로 분리했습니다.
+- `duo.png`에는 회전하는 포탑 본체만 넣고, 좌우 포신은 별도 이미지로 유지해
+  원본 듀오가 바탕에 남는 문제를 해결했습니다.
+
 ## 0.4.1 변경 사항
 
 - Duo 본체에서 포신처럼 보이는 중앙 구조를 제거했습니다.
@@ -54,7 +61,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.4.1
+Functional Resprites 0.4.2
 
 This version keeps the block-scale art readable at normal zoom.
 
@@ -64,10 +71,11 @@ This version keeps the block-scale art readable at normal zoom.
   material; no oversized mineral image covers the drill.
 - The same `item-*.png` files override the vanilla item regions, so conveyor
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
-- Duo keeps a compact base and prominent left/right barrel layers. The vanilla
-  alternate-fire and per-barrel recoil behavior are intentionally preserved.
-- The Duo base no longer contains barrel-shaped forms, preventing the vanilla
-  turret art from appearing underneath the replacement barrel layers.
+- Duo now uses the actual vanilla render layers: `duo-base.png` for the static
+  base, `duo.png` for the rotating turret body, and `duo-barrel-l/r.png` for
+  the two moving barrels.
+- The vanilla alternate-fire and per-barrel recoil behavior are intentionally
+  preserved while every visible Duo layer is replaced.
 
 The package is a texture-only override for vanilla blocks; no block behavior,
 recipes, save data, or campaign data are changed.
