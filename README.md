@@ -147,7 +147,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.8.3
+Functional Resprites 0.8.4
 
 This version retains the four Serpulo drill mechanisms and refines the two
 mechanical cutters with stepped five-groove spiral faces and distinct cutter pads.
@@ -166,6 +166,19 @@ mechanical cutters with stepped five-groove spiral faces and distinct cutter pad
   of appearing as a small attachment over a vanilla-sized foundation.
 - The vanilla alternate-fire and per-barrel recoil behavior are intentionally
   preserved while every visible Duo layer is replaced.
+
+### 0.8.4
+
+- Removed the four detached grey clamp blocks from each conventional drill's
+  fixed top layer. The top layer now contains only the small central collar,
+  leaving the mechanism visible.
+- Added stronger, restrained bevel highlights and shadow planes to the shared
+  metal frames used by Mechanical, Pneumatic, and Laser drills.
+- Enlarged and thickened the Laser Drill's four rotating emitters and beams,
+  then checked its 0, 45, and 90-degree rotations for atlas clipping.
+- Recolored the Blast Drill's static refractory plates to red-hot furnace metal
+  and removed its obstructive grey upper armor, while keeping its separate
+  additive heat rim.
 
 ### 0.8.3
 

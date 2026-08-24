@@ -2,7 +2,7 @@ displayName: "Functional Resprites"
 name: "functional-resprites"
 author: "awind"
 description: "Vanilla-faithful detailed resprites for the complete drill family and Duo turret."
-version: "0.8.3"
+version: "0.8.4"
 minGameVersion: 159
 hidden: true
 texturescale: 0.125
