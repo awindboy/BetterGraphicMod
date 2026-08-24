@@ -147,10 +147,26 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.8.4
+Functional Resprites 0.9.0
 
 This version retains the four Serpulo drill mechanisms and refines the two
 mechanical cutters with stepped five-groove spiral faces and distinct cutter pads.
+
+### 0.9.0 — Full structure pass
+
+- Added Build 159.7 overrides for every player-buildable vanilla structure
+  category: crafting, walls, defense, transport, liquids, power, production,
+  storage, turrets, unit production, payload, logic, sandbox and campaign.
+- Static chassis regions receive smooth high-resolution material shading while
+  retaining each original silhouette and palette. The hand-authored Drill and
+  Duo regions remain untouched.
+- Moving, rotating, recoil, mirrored, heat, glow, liquid, team-colour and item
+  masks retain their exact vanilla region names and remain separate layers, so
+  the engine continues to control every original animation and tint.
+- Environment floors, ores, props, trees, boulders and map decoration are not
+  overridden by this batch.
+- See `FULL_STRUCTURE_MANIFEST.md` for the generated Build 159.7 coverage and
+  layer-safety contract.
 
 - All eight Build 159.7 drill and bore blocks now use vanilla-faithful 8x
   resprites with smoother angular contours and restrained directional shading.
