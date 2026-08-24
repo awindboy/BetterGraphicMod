@@ -147,7 +147,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.8.0
+Functional Resprites 0.8.3
 
 This version retains the four Serpulo drill mechanisms and refines the two
 mechanical cutters with stepped five-groove spiral faces and distinct cutter pads.
@@ -166,6 +166,17 @@ mechanical cutters with stepped five-groove spiral faces and distinct cutter pad
   of appearing as a small attachment over a vanilla-sized foundation.
 - The vanilla alternate-fire and per-barrel recoil behavior are intentionally
   preserved while every visible Duo layer is replaced.
+
+### 0.8.3
+
+- Mechanical, Pneumatic, and Laser Drill `-top` layers now use fixed angular
+  retaining collars instead of circular overlays, so their rotating mechanisms
+  remain unobscured while the center reads as a protected drill opening.
+- The four Serpulo drill `-item` masks are now smaller, faceted ore fragments.
+  Mindustry still tints them from the mined item at runtime; the fixed collar
+  supplies the dark border without covering the drill face.
+- The Blast Drill's existing separated furnace rim and reinforced top layer are
+  retained, preserving its additive heat animation.
 
 The package is a texture-only override for vanilla blocks; no block behavior,
 recipes, save data, or campaign data are changed.
