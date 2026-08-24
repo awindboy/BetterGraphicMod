@@ -2,7 +2,7 @@ displayName: "Functional Resprites"
 name: "functional-resprites"
 author: "awind"
 description: "Detailed functional resprites for selected vanilla blocks."
-version: "0.2.1"
+version: "0.2.2"
 minGameVersion: 159
 hidden: true
-texturescale: 1254
+texturescale: 256
