@@ -31,6 +31,12 @@
 현재 버전은 레이어 구조와 피벗을 검증하는 단계입니다. 상부 덮개와 연기·열·총구
 섬광 레이어는 게임에서 기본 레이어 정렬을 확인한 뒤 추가합니다.
 
+## 0.4.4 변경 사항
+
+- Duo 포신을 세워진 원통처럼 보이는 형태에서, 전방으로 평행하게 뻗는 평면형
+  이중 자동포로 다시 그렸습니다.
+- 총구는 작은 사각 개구부로 처리해 탑뷰에서도 발사 방향이 즉시 읽히도록 했습니다.
+
 ## 0.4.3 변경 사항
 
 - Duo 받침을 저대비의 얇은 지지 프레임으로 다시 만들고, 포탑 본체를 총열이
@@ -68,7 +74,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.4.3
+Functional Resprites 0.4.4
 
 This version keeps the block-scale art readable at normal zoom.
 
@@ -80,7 +86,7 @@ This version keeps the block-scale art readable at normal zoom.
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
 - Duo uses the actual vanilla render layers: `duo-base.png` for the static
   support frame, `duo.png` for the rotating open turret body, and
-  `duo-barrel-l/r.png` for the two moving barrels.
+  `duo-barrel-l/r.png` for the two flat, forward-facing moving barrels.
 - The vanilla alternate-fire and per-barrel recoil behavior are intentionally
   preserved while every visible Duo layer is replaced.
 

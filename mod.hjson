@@ -2,7 +2,7 @@ displayName: "Functional Resprites"
 name: "functional-resprites"
 author: "awind"
 description: "Clean layered resprites for the mechanical drill, item transport, and Duo turret."
-version: "0.4.3"
+version: "0.4.4"
 minGameVersion: 159
 hidden: true
 texturescale: 0.125
