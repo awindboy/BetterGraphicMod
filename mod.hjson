@@ -1,8 +1,8 @@
 displayName: "Functional Resprites"
 name: "functional-resprites"
 author: "awind"
-description: "Detailed functional resprites for selected vanilla blocks."
-version: "0.2.6"
+description: "Functional resprites for drills, item transport, and the Duo turret."
+version: "0.3.0"
 minGameVersion: 159
 hidden: true
 texturescale: 0.125

@@ -41,3 +41,17 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
+Functional Resprites 0.3.0
+
+This version keeps the block-scale art readable at normal zoom.
+
+- The mechanical drill keeps its functional drill body, rotator, and animation.
+- Its center now draws the actual dominant mined item, using one shared set of
+  upgraded per-material sprites.
+- The same `item-*.png` files override the vanilla item regions, so conveyor
+  items and item UI use matching copper, lead, coal, and Erekir material shapes.
+- Duo remains a turret: its visual priority is the twin barrels, rotation, and
+  firing direction. Mineral sprites are intentionally not used on the turret.
+
+The package is a texture/script override for vanilla blocks; no block behavior,
+recipes, or campaign data are changed.
