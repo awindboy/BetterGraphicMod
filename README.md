@@ -31,6 +31,17 @@
 현재 버전은 레이어 구조와 피벗을 검증하는 단계입니다. 상부 덮개와 연기·열·총구
 섬광 레이어는 게임에서 기본 레이어 정렬을 확인한 뒤 추가합니다.
 
+## 0.5.0 변경 사항
+
+- Build 159.7 레이어 참조에 따라 첫 재구성 배치를 적용했습니다.
+- Mechanical Drill은 `mechanical-drill`, `-rotator`, `-top`,
+  `-item`의 네 레이어를 분리했습니다. 광물 색상은 전용 `-item` 마스크에만
+  런타임 틴트되므로 다른 2x2 드릴에는 영향을 주지 않습니다.
+- Duo는 개별 `duo-base` 덮어쓰기를 제거해 공유 바닐라 받침을 유지하고,
+  회전 본체와 좌우 독립 반동 포신만 교체했습니다.
+- 모든 신규 형태는 바닐라의 회색·갈색 팔레트, 탑뷰 피벗, 정상 확대 배율의
+  식별성을 우선했습니다.
+
 ## 0.4.4 변경 사항
 
 - Duo 포신을 세워진 원통처럼 보이는 형태에서, 전방으로 평행하게 뻗는 평면형
@@ -74,7 +85,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.4.4
+Functional Resprites 0.5.0
 
 This version keeps the block-scale art readable at normal zoom.
 
@@ -85,7 +96,8 @@ This version keeps the block-scale art readable at normal zoom.
 - The same `item-*.png` files override the vanilla item regions, so conveyor
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
 - Duo uses the actual vanilla render layers: `duo-base.png` for the static
-  support frame, `duo.png` for the rotating open turret body, and
+  shared support frame fallback (intentionally not overridden), `duo.png` for
+  the rotating turret body, and
   `duo-barrel-l/r.png` for the two flat, forward-facing moving barrels.
 - The vanilla alternate-fire and per-barrel recoil behavior are intentionally
   preserved while every visible Duo layer is replaced.
