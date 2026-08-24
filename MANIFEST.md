@@ -1,23 +1,54 @@
-# v0.5.1 Sprite Batch Manifest
+# v0.6.0 Sprite Batch Manifest
 
 - Target: Mindustry v8 Build 159.7
 - Texture scale: `0.125` (256 source pixels per tile)
-- Scope: Mechanical Drill and Duo only
+- Scope: Complete Build 159.7 drill family plus Duo
 
-## Mechanical Drill
+## Conventional drills
 
-Runtime ID: `mechanical-drill`  
+Runtime IDs: `mechanical-drill`, `pneumatic-drill`, `laser-drill`, `blast-drill`  
 Class/profile: `Drill` / P08
 
 | File | Role | Runtime behavior |
 |---|---|---|
-| `mechanical-drill.png` | static chassis | drawn first |
-| `mechanical-drill-rotator.png` | drill bit | continuous 360-degree rotation |
-| `mechanical-drill-top.png` | retaining brackets | static top layer |
-| `mechanical-drill-item.png` | mined-material mask | tinted by dominant item at runtime |
+| `<id>.png` | static chassis | drawn first |
+| `<id>-rotator.png` | drill head | continuous 360-degree rotation |
+| `<id>-top.png` | retaining structure | static top layer |
+| `<id>-item.png` | mined-material mask | tinted by dominant item at runtime |
+| `blast-drill-rim.png` | heat rim | additive warmup pulse |
 
-The shared `drill-item-2.png` override is intentionally absent so other size-2
-drills retain their vanilla item-mask behavior.
+Per-block item masks are used. Shared `drill-item-2/3/4` regions remain untouched.
+
+## Beam drills
+
+Runtime IDs: `plasma-bore`, `large-plasma-bore`  
+Class/profile: `BeamDrill` / P09
+
+| File pattern | Role | Runtime behavior |
+|---|---|---|
+| `<id>.png` | static chassis | drawn first |
+| `<id>-top.png` | directional emitter | rotates in 90-degree build directions |
+| `<id>-glow.png` | emitter glow | additive warmup and boost tint |
+| `drill-laser*.png` | beam family | normal and boosted beam/body/end regions |
+
+## Burst drills
+
+Runtime IDs: `impact-drill`, `eruption-drill`  
+Class/profile: `BurstDrill` / P10
+
+| File pattern | Role | Runtime behavior |
+|---|---|---|
+| `<id>.png` | static chassis | drawn first |
+| `<id>-top.png` | impact mechanism | static top layer |
+| `<id>-top-invert.png` | impact flash plate | timed inversion overlay when present |
+| `<id>-item.png` | mined-material mask | tinted by dominant item at runtime |
+| `<id>-arrow.png` | progress indicator | four-way staged motion |
+| `<id>-arrow-blur.png` | impact highlight | additive completion pulse |
+| `<id>-glow.png` | chamber glow | additive progress glow when present |
+
+All drill sprites use the original Build 159.7 geometry and palette as their
+source. The 8x source resolution removes visible pixel staircases and adds
+restrained directional shading without changing pivots or runtime motion.
 
 ## Duo
 

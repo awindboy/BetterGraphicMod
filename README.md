@@ -8,7 +8,7 @@
 
 ## 현재 적용
 
-- `Mechanical Drill`: 각진 본체, 회전 드릴 헤드, 중앙 광물 색상 마스크를 분리
+- `Drill 계열 전체`: 세르플로 드릴 4종, 에레키르 드릴·보어 4종과 빔 효과
 - `Duo`: 받침은 단순화하고 좌우 포신을 크게 분리
 
 바닐라 엔진이 드릴 회전, 포탑 조준·반동, 채굴·발사 이펙트를 계속 처리하도록
@@ -18,6 +18,18 @@
 
 이 폴더를 압축하거나 폴더 그대로 Mindustry의 Mods 메뉴에서 가져옵니다.
 게임이 설치된 뒤에는 `functional-resprites` 모드를 활성화하고 재시작합니다.
+
+## 0.6.0 변경 사항
+
+- `Mechanical Drill`, `Pneumatic Drill`, `Laser Drill`, `Blast Drill`,
+  `Plasma Bore`, `Large Plasma Bore`, `Impact Drill`, `Eruption Drill`을
+  하나의 드릴 배치로 업그레이드했습니다.
+- 외곽 실루엣, 중앙 기구, 색 배치와 각 건물의 고유 형태는 바닐라 원본을
+  유지하고, 픽셀 계단을 정리한 각진 윤곽과 절제된 방향성 명암만 추가했습니다.
+- 회전 드릴 헤드, 가열 림, 방향별 보어 상판, 빔·부스트 빔, 충격 드릴 화살표와
+  반전 상판, 발광 레이어를 원래 파일 구조 그대로 분리했습니다.
+- 크기별 공용 광물 마스크를 건드리지 않고 각 드릴 전용 `-item` 파일을 사용해
+  다른 블록으로 변경 사항이 번지지 않도록 했습니다.
 
 ## 0.5.1 변경 사항
 
@@ -36,10 +48,10 @@
 - 중앙 광물 표시는 실제 광물 이미지를 덮지 않고 작은 육각형 색상 마스크만 사용합니다.
 - Duo 좌우 포신은 별도 레이어로 유지해 번갈아 발사하는 기본 반동을 보존합니다.
 
-## 다음 확인 항목
+## 작업 원칙
 
-현재 버전은 레이어 구조와 피벗을 검증하는 단계입니다. 상부 덮개와 연기·열·총구
-섬광 레이어는 게임에서 기본 레이어 정렬을 확인한 뒤 추가합니다.
+새 건물처럼 재설계하지 않고 바닐라 실루엣과 팔레트를 기준으로 명암, 재질 구분,
+기능부 가독성만 보강합니다. 모든 회전·발광·반동 모션은 기존 엔진이 처리합니다.
 
 ## 0.5.0 변경 사항
 
@@ -96,14 +108,15 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.5.1
+Functional Resprites 0.6.0
 
 This version keeps the block-scale art readable at normal zoom.
 
-- The mechanical drill is split into a static base, a rotating central bit, and
-  a top layer so the existing 360-degree animation remains intact.
-- Its center uses a small bordered hexagonal mask tinted by the dominant mined
-  material; no oversized mineral image covers the drill.
+- All eight Build 159.7 drill and bore blocks now use vanilla-faithful 8x
+  resprites with smoother angular contours and restrained directional shading.
+- Rotators, tops, mined-item masks, heat rims, directional bore emitters, beams,
+  progress arrows, inversion plates, and additive glows remain separate runtime
+  layers, preserving every original animation.
 - The same `item-*.png` files override the vanilla item regions, so conveyor
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
 - Duo replaces the complete visible render stack: its static `duo-base.png`,
