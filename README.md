@@ -31,6 +31,12 @@
 현재 버전은 레이어 구조와 피벗을 검증하는 단계입니다. 상부 덮개와 연기·열·총구
 섬광 레이어는 게임에서 기본 레이어 정렬을 확인한 뒤 추가합니다.
 
+## 0.4.1 변경 사항
+
+- Duo 본체에서 포신처럼 보이는 중앙 구조를 제거했습니다.
+- 좌우 포신이 본체 위에 겹쳐 보이지 않고 독립적으로 보이도록 받침을 정리했습니다.
+- 드릴 중앙 광물 색상 마스크에 어두운 외곽선과 밝은 내부 테두리를 추가했습니다.
+
 ## 0.2.4 변경 사항
 
 - 고해상도 스프라이트가 맵 전체를 덮던 렌더링 배율 오류를 수정했습니다.
@@ -48,18 +54,23 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.4.0
+Functional Resprites 0.4.1
 
 This version keeps the block-scale art readable at normal zoom.
 
 - The mechanical drill is split into a static base, a rotating central bit, and
   a top layer so the existing 360-degree animation remains intact.
-- Its center uses a small hexagonal mask tinted by the dominant mined material;
-  no oversized mineral image covers the drill.
+- Its center uses a small bordered hexagonal mask tinted by the dominant mined
+  material; no oversized mineral image covers the drill.
 - The same `item-*.png` files override the vanilla item regions, so conveyor
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
 - Duo keeps a compact base and prominent left/right barrel layers. The vanilla
   alternate-fire and per-barrel recoil behavior are intentionally preserved.
+- The Duo base no longer contains barrel-shaped forms, preventing the vanilla
+  turret art from appearing underneath the replacement barrel layers.
 
 The package is a texture-only override for vanilla blocks; no block behavior,
 recipes, save data, or campaign data are changed.
+
+Remove older `functional-resprites` copies from the Mindustry Mods folder before
+installing this version, so duplicate atlas overrides cannot remain enabled.
