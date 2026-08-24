@@ -29,6 +29,12 @@
   Blast Drill은 회전 방폭판과 고정된 용광로·가열 림을 분리해 기존 모션을
   보존합니다.
 
+## 0.8.1 교정
+
+- 승인 시안의 Mechanical·Pneumatic·Laser·Blast 회전자 실루엣을 실제
+  `-rotator` 레이어에 맞춰 다시 분리했습니다. 시안의 나선 절삭면, 쐐기형
+  절삭 패드, 네 방향 레이저 발사기, 방폭 세그먼트의 비율을 유지합니다.
+
 ## 0.7.0 변경 사항
 
 - 세르플로의 `Mechanical Drill`, `Pneumatic Drill`, `Laser Drill`,

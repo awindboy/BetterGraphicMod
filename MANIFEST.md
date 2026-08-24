@@ -1,4 +1,4 @@
-# v0.8.0 Sprite Batch Manifest
+# v0.8.1 Sprite Batch Manifest
 
 - Target: Mindustry v8 Build 159.7
 - Texture scale: `0.125` (256 source pixels per tile)
@@ -19,7 +19,7 @@ Class/profile: `Drill` / P08
 
 Per-block item masks are used. Shared `drill-item-2/3/4` regions remain untouched.
 
-### v0.8.0 Serpulo drill identities
+### v0.8.1 Serpulo drill identities
 
 - `mechanical-drill`: intermeshed brass gear train, five shallow spiral cutter tiers, and small brass wedge teeth
 - `pneumatic-drill`: valved air reservoirs, readable hoses, five shallow spiral cutter tiers, and small silver wedge teeth
