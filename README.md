@@ -19,6 +19,16 @@
 이 폴더를 압축하거나 폴더 그대로 Mindustry의 Mods 메뉴에서 가져옵니다.
 게임이 설치된 뒤에는 `functional-resprites` 모드를 활성화하고 재시작합니다.
 
+## 0.8.0 변경 사항
+
+- Mechanical Drill과 Pneumatic Drill의 회전부를 다섯 겹의 얕은 나선 단차가
+  이어지는 작은 원형 절삭면으로 다시 구성했습니다.
+- 두 회전자 가장자리에는 회전해도 절삭 방향이 읽히는 작은 쐐기형 패드를
+  분리했습니다. Mechanical은 황동, Pneumatic은 은회색 패드를 사용합니다.
+- Laser Drill은 네 발사기와 굵은 보라색 빔을 하나의 회전 레이어에 유지하고,
+  Blast Drill은 회전 방폭판과 고정된 용광로·가열 림을 분리해 기존 모션을
+  보존합니다.
+
 ## 0.7.0 변경 사항
 
 - 세르플로의 `Mechanical Drill`, `Pneumatic Drill`, `Laser Drill`,
@@ -125,10 +135,10 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.7.0
+Functional Resprites 0.8.0
 
-This version gives the four Serpulo drills distinct functional mechanisms while
-keeping the block-scale art readable at normal zoom.
+This version retains the four Serpulo drill mechanisms and refines the two
+mechanical cutters with stepped five-groove spiral faces and distinct cutter pads.
 
 - All eight Build 159.7 drill and bore blocks now use vanilla-faithful 8x
   resprites with smoother angular contours and restrained directional shading.
