@@ -1,4 +1,4 @@
-# v0.5.0 Sprite Batch Manifest
+# v0.5.1 Sprite Batch Manifest
 
 - Target: Mindustry v8 Build 159.7
 - Texture scale: `0.125` (256 source pixels per tile)
@@ -26,10 +26,17 @@ Class/profile: `ItemTurret` + `DrawTurret` / P24
 
 | File | Role | Runtime behavior |
 |---|---|---|
+| `duo-base.png` | static foundation | replaces the shared vanilla `block-1` fallback |
 | `duo.png` | rotating turret body | follows target rotation |
 | `duo-barrel-l.png` | left cannon | independent recoil index 0 |
 | `duo-barrel-r.png` | right cannon | independent recoil index 1 |
+| `duo-outline.png` | turret-body under-outline | replaces the generated vanilla body outline |
+| `duo-barrel-l-outline.png` | left-cannon under-outline | follows the left cannon layer |
+| `duo-barrel-r-outline.png` | right-cannon under-outline | follows the right cannon layer |
+| `duo-preview.png` | neutral upper assembly | supplies build preview and runtime shadow silhouette |
 
-`duo-base.png` is intentionally absent. Duo uses the shared vanilla
-`block-1` base fallback; this keeps the static foundation visually quiet and
-leaves the cannon body and recoil layers as the readable functional elements.
+Every visible or silhouette-producing Duo region is overridden. This prevents
+the vanilla shared base, generated outlines, or preview shadow from remaining
+behind the custom rotating assembly. The upper assembly occupies roughly 80%
+of the tile width at neutral recoil while preserving the original pivot and
+the two independent recoil indices.

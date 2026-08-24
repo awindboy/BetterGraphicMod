@@ -19,6 +19,16 @@
 이 폴더를 압축하거나 폴더 그대로 Mindustry의 Mods 메뉴에서 가져옵니다.
 게임이 설치된 뒤에는 `functional-resprites` 모드를 활성화하고 재시작합니다.
 
+## 0.5.1 변경 사항
+
+- 한 타일을 가득 채우는 전용 `duo-base`를 복원하고, 회전 상부의 폭을 약 80%로
+  키워 받침 위에 작은 포탑이 올라간 것처럼 보이던 비율 문제를 수정했습니다.
+- 바닐라 실루엣이 남을 수 있는 `duo-preview`, `duo-outline`, 좌우 포신의
+  `-outline`까지 모두 커스텀 레이어로 교체했습니다.
+- `duo-preview`는 새 본체와 두 포신을 합성한 중립 상태이므로 건설 미리보기와
+  인게임 그림자도 새 실루엣을 사용합니다.
+- 좌우 포신 파일과 반동 인덱스는 그대로 분리되어 번갈아 발사하는 모션을 유지합니다.
+
 ## 0.4.0 변경 사항
 
 - 고해상도지만 매끈하고 제한된 색면을 사용하는 스타일로 재작업했습니다.
@@ -37,8 +47,9 @@
 - Mechanical Drill은 `mechanical-drill`, `-rotator`, `-top`,
   `-item`의 네 레이어를 분리했습니다. 광물 색상은 전용 `-item` 마스크에만
   런타임 틴트되므로 다른 2x2 드릴에는 영향을 주지 않습니다.
-- Duo는 개별 `duo-base` 덮어쓰기를 제거해 공유 바닐라 받침을 유지하고,
-  회전 본체와 좌우 독립 반동 포신만 교체했습니다.
+- Duo는 당시 개별 `duo-base` 덮어쓰기를 제거하고 회전 본체와 좌우 독립 반동
+  포신만 교체했으나, 이 방식은 바닐라 받침과 생성 레이어가 너무 강하게 남는
+  문제가 있어 0.5.1에서 다시 수정했습니다.
 - 모든 신규 형태는 바닐라의 회색·갈색 팔레트, 탑뷰 피벗, 정상 확대 배율의
   식별성을 우선했습니다.
 
@@ -85,7 +96,7 @@
 
 - 광물 결정체를 1x1 블록 안쪽 크기로 줄여 드릴 본체와 회전부를 가리지 않도록
   조정했습니다.
-Functional Resprites 0.5.0
+Functional Resprites 0.5.1
 
 This version keeps the block-scale art readable at normal zoom.
 
@@ -95,10 +106,11 @@ This version keeps the block-scale art readable at normal zoom.
   material; no oversized mineral image covers the drill.
 - The same `item-*.png` files override the vanilla item regions, so conveyor
   items and item UI use matching copper, lead, coal, and Erekir material shapes.
-- Duo uses the actual vanilla render layers: `duo-base.png` for the static
-  shared support frame fallback (intentionally not overridden), `duo.png` for
-  the rotating turret body, and
-  `duo-barrel-l/r.png` for the two flat, forward-facing moving barrels.
+- Duo replaces the complete visible render stack: its static `duo-base.png`,
+  rotating `duo.png`, neutral `duo-preview.png`, body and barrel outlines, and
+  the two flat forward-facing `duo-barrel-l/r.png` recoil layers.
+- The rotating upper assembly now fills roughly 80% of the tile width instead
+  of appearing as a small attachment over a vanilla-sized foundation.
 - The vanilla alternate-fire and per-barrel recoil behavior are intentionally
   preserved while every visible Duo layer is replaced.
 
