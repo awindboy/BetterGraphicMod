@@ -17,7 +17,7 @@ The theme is inspired by the broad idea of a future autonomous machine metropoli
 
 ## Current status
 
-Version 0.2.0 introduces the complete Serpulo factory set: 19 production buildings, 43 gameplay layers, and matching UI/database icons. Furnace chambers, compression jaws, centrifugal rotors, pistons, liquid wells, and cultivation chambers were separated according to the original build 159.7 draw order.
+Version 0.2.1 introduces the complete Serpulo factory set: 19 production buildings, 43 gameplay layers, and matching UI/database icons. Furnace chambers, compression jaws, centrifugal rotors, pistons, liquid wells, and cultivation chambers were separated according to the original build 159.7 draw order. Tiny cables and decorative surface noise were removed so each factory is identified by one dominant mechanism at gameplay zoom.
 
 Sprites are authored at four times the vanilla raster size and rendered at the original world scale with `texturescale: 0.25`.
 

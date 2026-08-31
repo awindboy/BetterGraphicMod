@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.2.1 — Factory scale and readability correction
+
+- Recentered every factory alpha footprint exactly on the vanilla canvas center.
+- Expanded visible factory bounds from the inconsistent 74–94% range to approximately 95–100% of the matching tile canvas.
+- Replaced dense wires, micro-pipes, bolts, and ornamental panel noise with broad structural planes.
+- Enlarged each factory's defining mechanism so it remains legible at vanilla raster size.
+- Rebuilt all dynamic center cutouts and moving layers from the simplified designs.
+- Verified zero center offset for all 19 factory base sprites.
+
 ## 0.2.0 — Serpulo machine-city factories
 
 - Rebuilt all 19 Serpulo production factories in the Machina Nexus machine-city style.
