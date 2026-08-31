@@ -1,5 +1,15 @@
 # Machina Nexus Manifest
 
+## 0.6.0 — Physical transport and liquid network rebuild
+
+- Rebuilt all 134 item-transport layers around physical belts, tread plates, stacking hardware, gates, bridges, clamps, and routing machinery rather than painted direction arrows.
+- Gave standard, titanium, plastanium, armored, and surge conveyors distinct material identities while keeping a broad item lane suitable for large transported-resource sprites.
+- Preserved the five vanilla connection topologies and normalized the alpha footprint across all four animation frames for the standard, titanium, and armored conveyor families.
+- Rebuilt all 68 liquid-transport layers, covering 19 pumps, conduits, junctions, bridges, routers, containers, and tanks across both planets.
+- Replaced conduit chevrons with continuous recessed fluid channels, narrow covers, physical couplers, valves, impellers, rotors, pressure chambers, and reservoirs.
+- Retained tint-compatible liquid masks, bridge motion layers, exact build 159.7 atlas names, exact 4x canvas dimensions, and the texture-only iOS/iPadOS-compatible package shape.
+- Continued to omit manual transport and liquid UI/full-icon overrides to protect the iOS menu atlas.
+
 ## 0.5.1 — One-tile transport readability pass
 
 - Re-audited the transport set at its actual `texturescale: 0.25` gameplay footprint instead of judging only the 4x production canvases.
