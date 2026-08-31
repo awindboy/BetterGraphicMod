@@ -17,9 +17,11 @@ The theme is inspired by the broad idea of a future autonomous machine metropoli
 
 ## Current status
 
-Version 0.3.0 contains the complete Serpulo and Erekir factory sets: 34 production and heat-processing buildings, 113 gameplay layers, and 68 matching UI/database icons. Furnace chambers, compression jaws, centrifugal rotors, pistons, liquid wells, heat channels, gas outlets, and cultivation chambers are separated according to the original build 159.7 draw order. Tiny cables and decorative surface noise were removed so each factory is identified by one dominant mechanism at gameplay zoom.
+Version 0.4.0 contains the complete Serpulo and Erekir factory sets plus all eight floor, beam, and burst drills: 42 buildings, 147 gameplay layers, and 84 matching UI/database icons. Furnace chambers, compression jaws, centrifugal rotors, pistons, liquid wells, heat channels, gas outlets, drill rotors, directional emitters, and impact rams are separated according to the original build 159.7 draw order. Tiny cables and decorative surface noise were removed so each structure is identified by one dominant mechanism at gameplay zoom.
 
 The Erekir set adds 15 machines, including the silicon arc furnace, electrolyzer, atmospheric concentrator, oxidation chamber, all heater and heat-routing blocks, both crucibles, and the cyanogen and phase synthesizers. Directional heat flow, liquid masks, gas outputs, vents, and weave animation layers remain distinct so the original effects and motion can be retained.
+
+The drill set covers the mechanical, pneumatic, laser, blast, plasma, large plasma, impact, and eruption drills. Eight-fold cutting silhouettes keep the two small spinning rotors visually continuous, plasma emitters match their two- and three-beam mining widths, and burst drills retain separate ram, arrow, glow, impact, and mined-item layers.
 
 Sprites are authored at four times the vanilla raster size and rendered at the original world scale with `texturescale: 0.25`.
 

@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.4.0 — Extraction machinery
+
+- Rebuilt all eight Serpulo and Erekir drill buildings: mechanical, pneumatic, laser, blast, plasma, large plasma, impact, and eruption.
+- Added 34 exact-name gameplay sprites covering bases, rotating cutters, fixed hubs, heat rims, directional beam tops, glow masks, burst rams, impact inversion, arrows, and mined-item masks.
+- Gave the mechanical and pneumatic rotors eight-fold cutting silhouettes; both retain 0.992 alpha-silhouette overlap after a 45-degree rotation.
+- Matched the directional plasma-bore heads to the engine's two- and three-beam arrays instead of treating them as floor-drill rotors.
+- Kept impact and eruption drills mechanically distinct with four inward-facing rams, separate charge indicators, and a deep central extraction shaft.
+- Verified exact 4x build 159.7 dimensions, centered base footprints, non-empty RGBA data, and matching build-menu/database icons for every drill.
+
 ## 0.3.0 — Erekir factories and heat processing
 
 - Rebuilt all 15 non-debug Erekir production and heat-processing buildings around one dominant, readable mechanism per structure.
