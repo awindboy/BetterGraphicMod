@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.2.0 — Serpulo machine-city factories
+
+- Rebuilt all 19 Serpulo production factories in the Machina Nexus machine-city style.
+- Added 43 gameplay sprites covering static chassis, underlays, rotors, pistons, active tops, liquid masks, and cultivation layers.
+- Preserved the build 159.7 canvas ratio and original atlas names at 4x raster resolution.
+- Added matching `ui/block-*-ui.png` and `generated-icons/block-*-full.png` files so build menus and database entries use the new designs.
+- Kept liquid tiles and engine-drawn flames compatible with the original block drawers.
+- Added `texturescale: 0.25` so high-resolution sprites retain their vanilla world footprint.
+
 ## 0.1.0 — Clean reboot
 
 - Removed the previous BetterGraphicMod working set from the active branch.

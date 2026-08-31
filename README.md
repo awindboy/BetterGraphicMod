@@ -17,7 +17,9 @@ The theme is inspired by the broad idea of a future autonomous machine metropoli
 
 ## Current status
 
-Version 0.1.0 is the clean project foundation. Branding, metadata, installation structure, and the visual production rules are in place. Gameplay sprites will be rebuilt by category and added only after their layer structure and animation behavior are accounted for.
+Version 0.2.0 introduces the complete Serpulo factory set: 19 production buildings, 43 gameplay layers, and matching UI/database icons. Furnace chambers, compression jaws, centrifugal rotors, pistons, liquid wells, and cultivation chambers were separated according to the original build 159.7 draw order.
+
+Sprites are authored at four times the vanilla raster size and rendered at the original world scale with `texturescale: 0.25`.
 
 The mod is hidden from the in-game browser while it is incomplete.
 
