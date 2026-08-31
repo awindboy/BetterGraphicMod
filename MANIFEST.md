@@ -1,5 +1,13 @@
 # Machina Nexus Manifest
 
+## 0.4.2 — Drill material and laser turntable correction
+
+- Replaced the flat, outlined mined-item markers with small bevel-shaded mineral forms using multiple value planes and no cartoon contour.
+- Preserved distinct silhouettes for mechanical, pneumatic, laser, blast, impact, and eruption mining indicators while keeping each centered inside its fixed socket.
+- Rebuilt the laser drill's exposed rotor area as a complete gunmetal turntable with angular bearing rings, radial rails, and restrained violet guides.
+- Ensured the laser base remains structurally filled at every rotor angle instead of exposing a black void beneath the emitters.
+- Revalidated all 35 drill layers, exact 4x dimensions, centered item markers, and the absence of manual drill menu icon overrides.
+
 ## 0.4.1 — Drill layer separation and atlas safety
 
 - Reduced the rotating area of the mechanical, pneumatic, laser, and blast drills so fixed cylinders, clamps, and blast shields remain on the base.
