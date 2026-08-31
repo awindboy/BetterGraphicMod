@@ -2,7 +2,7 @@ name: "machina-nexus"
 displayName: "[lightgray]Machina[] [orange]Nexus[]"
 author: "awindboy"
 description: "A texture-only machine-city graphics overhaul for Mindustry build 159.7. Reimagines structures as a vast autonomous industrial organism of black alloy, heat cores, extraction machinery, and layered energy networks."
-version: "0.5.0"
+version: "0.5.1"
 minGameVersion: "159"
 texturescale: 0.25
 hidden: true

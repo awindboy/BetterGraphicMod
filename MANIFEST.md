@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.5.1 — One-tile transport readability pass
+
+- Re-audited the transport set at its actual `texturescale: 0.25` gameplay footprint instead of judging only the 4x production canvases.
+- Reduced engraved noise, isolated highlights, and secondary surface machinery on the 22 one-tile transport structures.
+- Preserved and emphasized the functional silhouettes of lanes, crossings, gates, bridges, direction marks, and routing hubs.
+- Rebuilt the tiny unloader center as a crisp four-jaw rotor suited to its original 10x10-pixel world layer.
+- Left the two- and three-tile distributor, cargo structures, and mass driver at their existing detail density.
+- Revalidated all 134 transport layers at exact 4x dimensions with no manual transport UI icon overrides.
+
 ## 0.5.0 — Machine-city item transport
 
 - Rebuilt all 15 Serpulo and 11 Erekir item-transport buildings in the Machina Nexus material language.
