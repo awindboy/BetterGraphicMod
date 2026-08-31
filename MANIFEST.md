@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.5.0 — Machine-city item transport
+
+- Rebuilt all 15 Serpulo and 11 Erekir item-transport buildings in the Machina Nexus material language.
+- Added 134 exact-name gameplay sprites covering conveyor blend and animation frames, stack conveyor layers, junctions, bridges, sorters, routers, gates, ducts, unloaders, the mass driver, and both cargo structures.
+- Preserved every build 159.7 layer boundary, basename, direction mask, animation frame, alpha contract, and canvas at exactly four times the vanilla dimensions.
+- Added recessed moving lanes, raised guide rails, crossing decks, routing chambers, bridge machinery, cargo clamps, and restrained family-specific light accents.
+- Kept transport menu/database icons on the built-in fallback path; no manual transport UI or full-icon atlas overrides were introduced.
+- Validated all 134 layers as non-empty RGBA images with exact dimensions and retained the texture-only iOS/iPadOS-compatible package shape.
+
 ## 0.4.2 — Drill material and laser turntable correction
 
 - Replaced the flat, outlined mined-item markers with small bevel-shaded mineral forms using multiple value planes and no cartoon contour.
