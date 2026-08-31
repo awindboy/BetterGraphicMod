@@ -1,5 +1,13 @@
 # Machina Nexus Manifest
 
+## 0.6.1 — Vanilla geometry preservation pass
+
+- Removed every concept-sheet gameplay overwrite from the item and liquid transport pipelines.
+- Restyled all 134 item-transport layers directly from their build 159.7 counterparts while preserving each silhouette, pivot, connection topology, installation direction, and animation-frame footprint.
+- Restyled all 61 visible liquid-transport layers under the same rule and restored the seven renderer-tinted liquid masks to exact 4x vanilla values.
+- Added strict alpha-contract validation for every one of the 202 transport and liquid layers; a build now fails if any layer changes its source geometry.
+- Kept the machine-city treatment in material only: dark alloy, directional highlights, recessed lanes, restrained cyan, violet, lime, and heat-orange accents, with no full-block redesign.
+
 ## 0.6.0 — Physical transport and liquid network rebuild
 
 - Rebuilt all 134 item-transport layers around physical belts, tread plates, stacking hardware, gates, bridges, clamps, and routing machinery rather than painted direction arrows.
