@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.3.0 — Erekir factories and heat processing
+
+- Rebuilt all 15 non-debug Erekir production and heat-processing buildings around one dominant, readable mechanism per structure.
+- Added 70 gameplay sprites covering chassis, underlays, active tops, directional heat masks, liquid masks, gas outlets, vents, and weave layers.
+- Preserved every build 159.7 atlas name, layer contract, canvas ratio, and draw alignment at 4x raster resolution.
+- Added matching UI and database icons for all 15 buildings.
+- Verified centered base footprints, at least 93% canvas occupancy, exact 4x dimensions, and non-empty RGBA data for every layer.
+- Kept small cables, trim, bolts, and ornamental surface noise subordinate to the arc chamber, paired electrolyzer cells, intake turbine, heat channels, crucibles, cyanogen vessel, and phase spindle.
+
 ## 0.2.1 — Factory scale and readability correction
 
 - Recentered every factory alpha footprint exactly on the vanilla canvas center.
