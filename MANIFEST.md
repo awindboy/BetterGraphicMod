@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.4.1 — Drill layer separation and atlas safety
+
+- Reduced the rotating area of the mechanical, pneumatic, laser, and blast drills so fixed cylinders, clamps, and blast shields remain on the base.
+- Added a recessed, angular bearing cavity and fixed top bezel to make the stationary chassis, moving cutter, and upper socket visibly separate.
+- Replaced the shared `drill-item-2/3/4` overrides with block-specific mined-item layers for the mechanical, pneumatic, laser, and blast drills.
+- Refined the existing impact and eruption mined-item layers for their central ram chamber and deep extraction shaft.
+- Removed all 16 manually supplied drill UI/database icons to isolate the reported iOS menu-atlas corruption; built-in drill menu icons remain as the safe fallback.
+- Verified 35 drill gameplay layers, exact 4x canvases, centered item markers, and 0.999 45-degree rotor silhouette overlap for the two small rotary drills.
+
 ## 0.4.0 — Extraction machinery
 
 - Rebuilt all eight Serpulo and Erekir drill buildings: mechanical, pneumatic, laser, blast, plasma, large plasma, impact, and eruption.
