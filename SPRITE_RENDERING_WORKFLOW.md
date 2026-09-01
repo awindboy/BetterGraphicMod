@@ -35,10 +35,10 @@ Machina Nexus sprites must be designed from Mindustry build 159.7 runtime behavi
 
 ## Automated checks for the current set
 
-- 134 item-transport layers: exact source-relative path, 4x canvas size, and alpha geometry.
-- 68 liquid-transport layers: exact source-relative path, 4x canvas size, and alpha geometry.
-- 15 conveyor connection/frame sets: four distinct frames per set and source-luminance correlation of at least 0.70.
-- 30 duct and conduit upper connection layers: source-luminance correlation of at least 0.90.
+- 134 item-transport layers: exact source-relative path, 4x canvas size, and non-empty RGBA data.
+- 68 liquid-transport layers: exact source-relative path, 4x canvas size, and non-empty RGBA data.
+- 15 conveyor connection/frame sets: four distinct moving frames and five distinct routing states per family.
+- 30 duct and conduit upper connection layers: five distinct, non-empty routing states per family.
 - 14 runtime-tinted or additive layers: exact 4x source values, with no baked accent color.
 
-These checks do not replace an in-game test. They prevent the specific failure where a visually finished overlay hides the original motion or connection mechanism while still passing a size and alpha test.
+Visible mechanical layers may use new alpha silhouettes when required by the redesign. Runtime masks remain byte-exact, while connection layers are judged by distinct routing states and composite behavior rather than source-luminance similarity. These checks do not replace an in-game test.

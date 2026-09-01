@@ -1,5 +1,15 @@
 # Machina Nexus Manifest
 
+## 0.7.0 — Machine-city transport redesign
+
+- Rebuilt 134 item-transport and 68 liquid-transport atlas layers from functional runtime contracts instead of recoloring vanilla luminance.
+- Replaced conveyor chevrons with broad interlocking tread plates, thin guide rails, and family-specific bearing channels while retaining five connection states and four animation frames.
+- Reconstructed duct and conduit lower paths and raised covers independently so items and engine-drawn liquids remain visible between physical depth levels.
+- Gave crossings, bridges, phase links, sorters, routers, gates, unloaders, cargo blocks, and the mass driver distinct function-revealing mechanisms.
+- Rebuilt pumps, liquid junctions, reservoirs, and reinforced liquid hardware around manifolds, impeller apertures, separated over-under channels, and repeatable bridge ports.
+- Preserved all 14 runtime item-color, liquid-color, and additive glow masks byte-for-byte at 4x resolution.
+- Replaced alpha-identity and source-luminance tests with semantic checks for dimensions, non-empty output, distinct animation frames, distinct connection states, and exact runtime masks.
+
 ## 0.6.2 — Runtime-semantic transport rebuild
 
 - Audited the build 159.7 declarations, block classes, and draw blocks for conveyors, stack conveyors, ducts, bridges, sorters, unloaders, cargo structures, conduits, pumps, and liquid storage.
