@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.6.2 — Runtime-semantic transport rebuild
+
+- Audited the build 159.7 declarations, block classes, and draw blocks for conveyors, stack conveyors, ducts, bridges, sorters, unloaders, cargo structures, conduits, pumps, and liquid storage.
+- Removed the uniform belt, duct, and conduit overlays that preserved alpha but visually erased vanilla connection and animation mechanisms.
+- Rebuilt all visible transport layers from the source luminance structure so bends, merges, side entries, moving frames, caps, openings, and rotating direction parts survive the style conversion.
+- Restored 14 runtime item-color, liquid-color, and additive power-glow layers as neutral exact-value masks.
+- Added original/current comparison sheets and semantic validation for 15 conveyor frame sets and 30 duct/conduit connection layers.
+- Added `SPRITE_RENDERING_WORKFLOW.md` as the mandatory process for every later building family.
+
 ## 0.6.1 — Vanilla geometry preservation pass
 
 - Removed every concept-sheet gameplay overwrite from the item and liquid transport pipelines.
