@@ -1,5 +1,14 @@
 # Machina Nexus Manifest
 
+## 0.7.1 — Approved conveyor design correction
+
+- Replaced the temporary flat slat implementation with the actual approved machine-city conveyor artwork.
+- Extracted the approved alloy chassis, roller banks, recessed lights, and interlocking plate deck as separate production components.
+- Expanded the moving deck to roughly 78% of the tile so transported item sprites do not cover the complete belt mechanism.
+- Rebuilt all 60 standard, titanium, and armored connection/animation sprites from this approved material set.
+- Advanced the center deck by one quarter plate pitch across four frames for a seamless animation loop while keeping the outer machinery static.
+- Rebuilt plastanium and surge stack-conveyor visible state layers from the approved violet and reinforced-orange designs; runtime glow masks remain untouched.
+
 ## 0.7.0 — Machine-city transport redesign
 
 - Rebuilt 134 item-transport and 68 liquid-transport atlas layers from functional runtime contracts instead of recoloring vanilla luminance.
